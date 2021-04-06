@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="./css/fonts/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    <script src="https://kit.fontawesome.com/efa90cc535.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./scss/style.css" />
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="./fonts/icomoon.svg" /> -->
+    <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4702dd8f44/UntitledProject/style.css"> -->
+    <!-- <link rel="stylesheet" href="https://i.icomoon.io/public/temp/4702dd8f44/UntitledProject/style.css"> -->
+    
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="loadingLine" id="loadingLine"></div>
+    </div>
+    <div class="mainContainer">
+
+        <!-- nav bar + menu -->
+
+        <header id="top">
+            <a class="logo" href="">
+                <img src="./images/logo.png">
+            </a>
+            <div class="menu">
+                <div class="menuIcon" onclick="javascript: swipeMenu();return 0;">
+                    <!-- <i class="fa fa-bars"></i> -->
+                    <span class="icon-noun_menu_677012"></span>
+                </div>
+                <div class="menuSlider" id="menuSlider">
+                    <div id="menuSliderContainer">
+                        <div class="menuSliderHeader">
+                            <form class="serachForm">
+                                <span id="openSearchIcon" onclick="javascript : openSearchInput();return;" class="icon-noun_Search_3485016"></span>
+                                <!-- <i id="openSearchIcon" class="fa fa-search" onclick="javascript : openSearchInput();return;"></i> -->
+                                <span class="formSpan">
+                                    <span id="closeSearchIcon" style="opacity:0" onclick="javascript : closeSearchInput();return;" class="icon-noun_cancel_2993148"></span>
+                                    <!-- <i id="closeSearchIcon" style="opacity:0" class="fa fa-times" onclick="javascript : closeSearchInput();return;"></i> -->
+                                </span>
+                                <input id="searchInput" type="text" placeholder="جست و جو" name="search">
+                            </form>
+                            <div class="exitMenuBtn" onclick="javascript: closeMenu();return 0;">
+                                <!-- <i class="fa fa-times"></i> -->
+                                <span class="icon-noun_cancel_2993148"></span>
+                            </div>
+                        </div>
+                        <ul class="menuList">
+                            <li id="li1">
+                                    <a>خانه</a>
+                                    <ul>
+                                        <li><a>سطح دو-</a></li>
+                                        <li><a>سطح دو-</a></li>
+                                        <li><a>سطح دو-</a></li>
+                                    </ul>
+                            </li>
+                            <li id="li2"><a>درباره ما</a></li>
+                            <li id="li3">
+                                    <a>نمونه کارها</a>
+                                    <ul>
+                                        <li><a>سطح دو-</a></li>
+                                        <li><a>سطح دو-</a></li>
+                                        <li><a>سطح دو-</a></li>
+                                        <li><a>سطح دو-</a></li>
+                                    </ul>
+                            </li>
+                            <li id="li4">
+                                    <a>بلاگ</a>
+                                    <ul>
+                                        <li><a>-سطح دو</a></li>
+                                        <li><a>-سطح دو</a></li>
+                                        <li><a>-سطح دو</a></li>
+                                    </ul>
+                            </li>
+                            <li id="li5"><a>ارتباط با ما</a></li>
+                        </ul>
+                        <div class="socialMediaIcons">
+                            <ul>
+                                <li style="padding-left : 0px;">
+                                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tellAndEmail">
+                            <p>003 124 115 : T</p>
+                            <p>info@mail.com : E</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu" id="menuResponsive" style="display : none">
+                <div class="menuIcon" onclick="javascript: swipeResponsiveMenu();return 0;">
+                    <span class="icon-noun_menu_677012"></span>
+                </div>
+                <div class="menuSlider" id="menuResponsiveSlider">
+                    <div id="menuResponsiveSliderContainer">
+                        <div class="menuSliderHeader">
+                            <form class="serachForm">
+                                <span id="openSearchIconResponsiveMenu" onclick="javascript : openSearchInputResponsiveMenu();return;" class="icon-noun_Search_3485016"></span>
+                                <!-- <span id="openSearchIconResponsiveMenu" onclick="javascript : openSearchInputResponsiveMenu();return;" class="icon-noun_Search_3485016"></span> -->
+                                <!-- <span class="icon-noun_Search_3485016" ></span> -->
+                                <!-- <i id="openSearchIconResponsiveMenu" class="fa fa-search" onclick="javascript : openSearchInputResponsiveMenu();return;"></i> -->
+                                <span class="formSpan">
+                                    <span id="closeSearchIconResponsiveMenu" style="opacity:0" onclick="javascript : closeSearchInputResponsiveMenu();return;" class="icon-noun_cancel_2993148"></span>
+                                    <!-- <i id="closeSearchIconResponsiveMenu" style="opacity:0" class="fa fa-times" onclick="javascript : closeSearchInputResponsiveMenu();return;"></i> -->
+                                </span>
+                                <input id="searchInputResponsiveMenu" type="text" placeholder="جست و جو" name="search">
+                            </form>
+                            <div class="exitMenuBtn" onclick="javascript: closeResponsiveMenu();return 0;">
+                                <span class="icon-noun_cancel_2993148"></span>
+                                <!-- <i class="fa fa-times"></i> -->
+                            </div>
+                        </div>
+                        <ul class="menuList">
+                                <li id="li1Responsive">
+                                    <a>خانه</a>
+                                    <ul>
+                                        <li><a>طراحی-</a></li>
+                                        <li><a>دوخت-</a></li>
+                                        <li><a>فروش-</a></li>
+                                    </ul>
+                                </li>
+                                <li id="li2Responsive"><a>درباره ما</a></li>
+                                <li id="li3Responsive">
+                                    <a>نمونه کارها</a>
+                                    <ul>
+                                        <li><a>کلاسیک-</a></li>
+                                        <li><a>مدرن-</a></li>
+                                        <li><a>تازه ها-</a></li>
+                                        <li><a>برند-</a></li>
+                                    </ul>
+                                </li>
+                                <li id="li4Responsive">
+                                    <a>بلاگ</a>
+                                    <ul>
+                                        <li><a>آرشیو وبلاگ-</a></li>
+                                        <li><a>دسته بندی وبلاگ-</a></li>
+                                        <li><a>صفحه تکی وبلاگ-</a></li>
+                                    </ul>
+                                </li>
+                                <li id="li5Responsive"><a>ارتباط با ما</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- first division -->
+
+        <section class="firstDiv">
+            <div class="imageContainer">
+                <div class="images">
+                    <div style="opacity:0" id="pic1"></div>
+                    <div style="opacity:0" id="pic2"></div>
+                    <div style="opacity:0" id="pic3"></div>
+                    <div id="pic4"></div>
+                </div>
+            </div>
+            <div class="title">
+                <div class="title1">
+                    <p class="pText">طراحی</p>
+                    <p class="pBox">با سبک مدرن</p>
+                </div>
+                <div id="title2" class="title2">
+                    <p id="p1">راه حل های خلاقانه</p>
+                    <p id="p2">کیفیت بی همتا</p>
+                    <p id="p3">سرعت بی نظیر</p>
+                </div>
+                <div id="title2Responsive" class="title2" style="display : none">
+                    <p id="p1Responsive">راه حل های خلاقانه</p>
+                    <p id="p2Responsive">کیفیت بی همتا</p>
+                    <p id="p3Responsive">سرعت بی نظیر</p>
+                </div>
+                <div id="title2Responsive2" class="title2" style="display : none">
+                    <p id="p1Responsive2">راه حل های خلاقانه</p>
+                    <p id="p2Responsive2">کیفیت بی همتا</p>
+                    <p id="p3Responsive2">سرعت بی نظیر</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- second divition -->
+
+        <section class="secondDiv" id="secondDiv">
+            <div  id="secondDivText">
+                <div class="textTitle1">
+                    <h3>تاریخچه شرکت</h3>
+                </div>
+                <div class="line"></div>
+                <div class="textTitle2">
+                    <h5>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</h5>
+                </div>
+                <div class="textTitle3">
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                </div>
+            </div>
+            <div id="secondDivSlide">
+                <!-- <div id="secondDivImagesSlider" class="secondImagesSlides">
+                    <img src="./images/11.jpg">
+                    <img src="./images/2.jpg">
+                    <img src="./images/1.jpg">
+                </div> -->
+                <div id="history-images" class="owl-carousel" >
+                    <div id="firstPic"><img src="./images/11.jpg"></div>
+                    <div><img src="./images/2.jpg"></div>
+                    <div><img src="./images/1.jpg"></div>
+                </div>
+            </div>
+            <!-- <div id="secondDivSlideResponsive" style="display : none;">
+                <div id="secondDivImagesSliderResponsive" class="secondImagesSlides">
+                    <img src="./images/11.jpg">
+                    <img src="./images/2.jpg">
+                    <img src="./images/1.jpg">
+                </div>
+            </div> -->
+        </section>
+
+
+        <!-- third Div -->
+
+        <section class="thirdDiv">
+            <div class="thirdDivTitle">
+                <h3>چرا ما ؟</h3>
+                <div class="line"></div>
+                <h6>با چه هدفی جز سودآوری</h6>
+            </div>
+            <div class="thirdDivExplanation">
+                <div class="explanations">
+                    <div class="thirdDivIcon"><i class="fa fa-question-circle-o" aria-hidden="true"></i></div>
+                    <div class="line"></div>
+                    <h4>یکپارچگی</h4>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                </div>
+                <div class="explanations">
+                    <div class="thirdDivIcon"><i class="fa fa-moon-o" aria-hidden="true"></i></div>
+                    <div class="line"></div>
+                    <h4>تنوع</h4>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                </div>
+                <div class="explanations">
+                    <div class="thirdDivIcon"><i class="fa fa-map-o" aria-hidden="true"></i></div>
+                    <div class="line"></div>
+                    <h4>کیفیت</h4>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- fourth Div -->
+
+        <section class="fourthDiv">
+            <div class="fourthDivtitle">
+                <h3>نمونه کارها</h3>
+                <div class="line"></div>
+                <h6>نمونه طرح ها و کارهای ما رو از اینجا دنبال کن</h6>
+            </div>
+            <div class="fourthDivMenu">
+                <div class="fourthDivMenuIcon" onclick="javascript: openFourthDivMenu(); return 0;">
+                    <!-- <i  class="fa fa-bars"></i> -->
+                    <span id="iconMenuBar" class="icon-noun_menu_677012"></span>
+                    <!-- <i class="fa fa-times"></i> -->
+                    <span style="opacity:0" id="iconExit" class="icon-noun_cancel_2993148"></span>
+                </div>
+                <ul id="fourthDivMenuList">
+                    <li onclick="javascript : fourthDivTabs('all');return 0;"><a id="allTitle" style="color : #7beec7">همه</a></li>
+                    <li onclick="javascript : fourthDivTabs('branding');return 0;"><a id="brandingTitle">برند</a></li>
+                    <li onclick="javascript : fourthDivTabs('webDesign');return 0;"><a id="webDesignTitle">طراحی سایت</a></li>
+                    <li onclick="javascript : fourthDivTabs('graphicDesign');return 0;"><a id="graphicDesignTitle">طراحی گرافیک</a></li>
+                </ul>
+            </div>
+            <div class="fourthDivMenuResponsive" style="display : none">
+                <div class="fourthDivMenuIcon" onclick="javascript: openFourthDivMenuResponsive(); return 0;">
+                    <!-- <i  class="fa fa-bars"></i> -->
+                    <span id="iconMenuBarResponsive" class="icon-noun_menu_677012"></span>
+                    <!-- <i class="fa fa-times"></i> -->
+                    <span style="opacity:0" id="iconExitResponsive" class="icon-noun_cancel_2993148"></span>
+                </div>
+                <ul id="fourthDivMenuListResponsive">
+                    <li onclick="javascript : fourthDivTabsResponsive('all');return 0;"><a id="allTitleResponsive" style="color : #7beec7">همه</a></li>
+                    <li onclick="javascript : fourthDivTabsResponsive('branding');return 0;"><a id="brandingTitleResponsive">برند</a></li>
+                    <li onclick="javascript : fourthDivTabsResponsive('webDesign');return 0;"><a id="webDesignTitleResponsive">طراحی سایت</a></li>
+                    <li onclick="javascript : fourthDivTabsResponsive('graphicDesign');return 0;"><a id="graphicDesignTitleResponsive">طراحی گرافیک</a></li>
+                </ul>
+            </div>
+            <div class="fourthDivPics">
+                <div id="all" class="allCategory">
+                    <div class="row">
+                        <div class="fourthDivPicAll" >
+                            <img src="./images/p9.jpg">
+                            <div class="picLayout">
+                                <div class="like" onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p><var>129</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="fourthDivPicAll"  style="margin-right:30px;margin-left : 30px;">
+                            <img src="./images/p2.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>765</var></p>
+                                    <p class="likedAlert" >Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fourthDivPicAll" >
+                            <img src="./images/p3.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>321</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="fourthDivPicAll" >
+                            <img src="./images/p5.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>684</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fourthDivPicAll"  style="margin-right:30px;margin-left : 30px;">
+                            <img src="./images/p6.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>98765</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fourthDivPicAll">
+                            <img src="./images/p7.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>98765</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display : none" id="webDesign" class="firstCategory">
+                    <div class="row">
+                        <div class="fourthDivPicWebDesign" >
+                            <img src="./images/p7.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>098765432</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="fourthDivPicWebDesign"   style="margin-right:30px;margin-left : 30px;">
+                            <img src="./images/p5.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>32122</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="fourthDivPicWebDesign" >
+                            <img src="./images/p9.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>12</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div style="display : none" id="graphicDesign" class="secondCategory">
+                    <div class="row" style="justify-content : flex-end">
+                        <div class="fourthDivPicGraphicDesign" >
+                            <img src="./images/p6.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>140</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div style="display : none" id="branding" class="thirdCategory">
+                    <div class="row"  style="justify-content : flex-end">
+                        <div class="fourthDivPicBranding" >
+                            <img src="./images/p3.jpg">
+                            <div class="picLayout">
+                                <div class="like"  onclick="javascript:liked(this);return 0;">
+                                    <var class="likingLimits" style="display : none">true</var>
+                                    <div class="likeicons">
+                                        <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                        <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                    </div>
+                                    <p id="likesNumPic"><var>190</var></p>
+                                    <p class="likedAlert">Liked</p>
+                                </div>
+                                <div class="picTitle">
+                                    <h5>طرح های کلاسیک و مدرن</h5>
+                                    <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="fourthDivPicBranding"   style="margin-right:30px;margin-left : 30px;">
+                           <img src="./images/p2.jpg">
+                           <div class="picLayout">
+                            <div class="like"  onclick="javascript:liked(this);return 0;">
+                                <var class="likingLimits" style="display : none">true</var>
+                                   <div class="likeicons">
+                                       <i id="emptyLikeIcon" class="fa fa-heart-o" aria-hidden="true"></i>
+                                       <i id="fillLikeIcon" class="fa fa-heart" aria-hidden="true"></i>
+                                   </div>
+                                   <p id="likesNumPic"><var>98765</var></p>
+                                   <p class="likedAlert">Liked</p>
+                               </div>
+                               <div class="picTitle">
+                                   <h5>طرح های کلاسیک و مدرن</h5>
+                                   <p>جدیدترین مدل ها از بهترین برندها</p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- loadin Icon  -->
+
+        <div class="loadingIcon" id="loadingIcon" onclick="javascript: document.getElementById('loadingIcon').style.display = 'none';return 0;">
+                <span class="icon-noun_Arrow_2066365"></span>
+        </div>
+
+        <!-- fifth Div -->
+
+        <section class="fifthDiv">
+            <div class="leftBox">
+                <h3>با <b style="font-weight : bolder">خبرنامه</b> ما مطلع شوید</h3>
+            </div>
+            <div class="rightBox">
+                <form>
+                    <input class="formInput" type="text" placeholder="ایمیل" name="email">
+                    <input class="formBtn" type="submit" value="تایید" name="submit">
+                </form>
+            </div>
+        </section>
+
+        <!-- bring the page up -->
+        
+        <a class="bringUp" id="bringUp" href="#top">
+            <!-- <i class="fa fa-chevron-up"></i> -->
+            <span class="icon-noun_Arrow_2722051"></span>
+        </a>
+        
+        
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerBox">
+                <h5>آدرس شرکت</h5>
+                <p>
+                    شهر محل
+                    <br>
+                    خیابان و یا کوچه 
+                    <br>
+                    نام کشور و یا شهرستان
+                    <br>
+                </p>
+            </div>
+            <div style="align-items : center !important" class="footerBox" id="footerRights">
+                <div class="footerIcons">
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-paper-plane" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+                <p>تمامی حقوق این سایت متعلق به میباشد</p>
+            </div>
+            <div class="footerBox" id="footerContact">
+                <h5>راه های ارتباطی</h5>
+                <p>
+                    003 124 115 : T
+                    <br>
+                    info@mail.com : E
+                    <br>
+                    www.website.com : W
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script type="text/javascript" src="./js/index.js"></script>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+</body>
+</html>

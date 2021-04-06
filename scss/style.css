@@ -1,0 +1,1491 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?m0hxtq");
+  src: url("../fonts/icomoon.eot?m0hxtq#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?m0hxtq") format("truetype"), url("../fonts/icomoon.woff?m0hxtq") format("woff"), url("../fonts/icomoon.svg?m0hxtq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-noun_menu_677012:before {
+  content: "\e902";
+}
+
+.icon-noun_Arrow_2066365:before {
+  content: "\e903";
+}
+
+.icon-noun_cancel_2993148:before {
+  content: "\e900";
+}
+
+.icon-noun_Arrow_2722051:before {
+  content: "\e901";
+}
+
+.icon-noun_Search_3485016:before {
+  content: "\e800";
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 200;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+  background-color: rgba(255, 255, 255, 0.952);
+}
+
+.loading .loadingLine {
+  position: fixed;
+  top: 50%;
+  width: 0px;
+  background-color: #333;
+  height: 1px;
+  -webkit-transition: width 3000ms;
+  transition: width 3000ms;
+  z-index: 100;
+}
+
+.line {
+  border-top: solid .01pc black;
+  width: 40px;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.mainContainer {
+  scroll-behavior: smooth;
+  width: 1140px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainContainer header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+  height: 100px;
+}
+
+.mainContainer header .menu {
+  position: relative;
+}
+
+.mainContainer header .menu .menuIcon span {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.mainContainer header .menu .menuSlider {
+  background-image: url("../images/nav_bg.jpg");
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  height: 100%;
+  width: 0px;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+  top: 0px;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer {
+  display: none;
+  z-index: -1;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15px;
+  position: relative;
+  padding-top: 30px;
+  color: #fff;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader .exitMenuBtn span, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader .exitMenuBtn span {
+  position: absolute;
+  top: 35px;
+  right: 24px;
+  font-size: 30px;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader .exitMenuBtn span::before, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader .exitMenuBtn span::before {
+  font-weight: bold;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader .exitMenuBtn span:hover, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader .exitMenuBtn span:hover {
+  color: #7beec7;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader form, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader form {
+  margin: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader form #openSearchIconResponsiveMenu, .mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader form #openSearchIcon, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader form #openSearchIconResponsiveMenu, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader form #openSearchIcon {
+  font-size: 60px;
+  position: absolute;
+  left: -1px;
+  top: -5px;
+  cursor: pointer;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader form .formSpan, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader form .formSpan {
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  left: 15px;
+  top: 10px;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader form .formSpan #closeSearchIcon, .mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader form .formSpan #closeSearchIconResponsiveMenu, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader form .formSpan #closeSearchIcon, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader form .formSpan #closeSearchIconResponsiveMenu {
+  font-size: 14px;
+  padding-top: 1px !important;
+  padding-left: 5px;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader form .formSpan i, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader form .formSpan i {
+  font-size: 40px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuSliderHeader form input, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuSliderHeader form input {
+  overflow: hidden;
+  width: 0px;
+  height: 20px;
+  background-color: #333;
+  border: solid #fff 1px;
+  border-radius: 15px;
+  direction: rtl;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuList, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuList {
+  padding: 30px;
+  margin-right: 35px;
+  padding-top: 0px;
+  margin-top: 50px;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuList li, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuList li {
+  list-style: none;
+  font-size: 20px;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  text-align: right;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuList li ul, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuList li ul {
+  margin: 0%;
+  text-align: right;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: height 500ms;
+  transition: height 500ms;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuList li ul li, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuList li ul li {
+  font-size: 14px;
+  -webkit-transform: translateX(0px) !important;
+          transform: translateX(0px) !important;
+  text-align: right;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuList li:hover ul, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuList li:hover ul {
+  height: 100px;
+  opacity: 1;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuList li:hover ul li, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuList li:hover ul li {
+  -webkit-transition: height 500ms;
+  transition: height 500ms;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuList li a, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuList li a {
+  color: #fff;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .menuList li a:hover, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .menuList li a:hover {
+  color: #7beec7;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .tellAndEmail, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .tellAndEmail {
+  color: #fff;
+  padding-right: 65px;
+  position: absolute;
+  bottom: 18px;
+  right: 0px;
+  text-align: right;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .socialMediaIcons, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .socialMediaIcons {
+  margin: 0px;
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  text-align: right;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .socialMediaIcons ul, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .socialMediaIcons ul {
+  padding-right: 65px;
+  margin-left: auto;
+  text-align: right;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .socialMediaIcons ul li, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .socialMediaIcons ul li {
+  padding-left: 15px;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .socialMediaIcons ul li a, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .socialMediaIcons ul li a {
+  color: #fff;
+}
+
+.mainContainer header .menu .menuSlider #menuSliderContainer .socialMediaIcons ul li a:hover, .mainContainer header .menu .menuSlider #menuResponsiveSliderContainer .socialMediaIcons ul li a:hover {
+  color: #7beec7;
+  cursor: pointer;
+}
+
+.mainContainer .firstDiv {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.mainContainer .firstDiv .imageContainer {
+  width: 100%;
+}
+
+.mainContainer .firstDiv .imageContainer .images {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 610px;
+}
+
+.mainContainer .firstDiv .imageContainer .images #pic1 {
+  background-image: url("../images/slide1.jpg");
+}
+
+.mainContainer .firstDiv .imageContainer .images #pic2 {
+  background-image: url("../images/slide2.jpg");
+}
+
+.mainContainer .firstDiv .imageContainer .images #pic3 {
+  background-image: url("../images/slide3.jpg");
+}
+
+.mainContainer .firstDiv .imageContainer .images #pic4 {
+  background-image: url("../images/slide4.jpg");
+}
+
+.mainContainer .firstDiv .imageContainer .images #pic1, .mainContainer .firstDiv .imageContainer .images #pic2, .mainContainer .firstDiv .imageContainer .images #pic3, .mainContainer .firstDiv .imageContainer .images #pic4 {
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  right: 0;
+  top: 0;
+  left: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  bottom: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  -webkit-transition: opacity 3000ms;
+  transition: opacity 3000ms;
+}
+
+.mainContainer .firstDiv .title {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  color: black;
+  direction: rtl;
+}
+
+.mainContainer .firstDiv .title .title1 {
+  margin-right: 6%;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainContainer .firstDiv .title .title1 .pBox {
+  background-color: #7beec7;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-right: 10px;
+}
+
+.mainContainer .firstDiv .title .title1 .pText {
+  font-weight: bold;
+}
+
+.mainContainer .firstDiv .title .title2 {
+  margin-right: 6%;
+  margin-top: 40px;
+  font-size: 30px;
+  -webkit-transition: width 1000ms;
+  transition: width 1000ms;
+  position: relative;
+  width: 0px;
+  height: 60px;
+  border-left: solid black 1px;
+}
+
+.mainContainer .firstDiv .title .title2 p {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0px;
+  position: absolute;
+  -webkit-transition: width 1000ms;
+  transition: width 1000ms;
+}
+
+.mainContainer #secondDiv {
+  width: 100%;
+  margin-top: 100px;
+  padding-right: 15px;
+  opacity: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
+}
+
+.mainContainer #secondDiv #secondDivText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  text-align: right;
+}
+
+.mainContainer #secondDiv #secondDivText h3 {
+  font-weight: bolder;
+}
+
+.mainContainer #secondDiv #secondDivText p {
+  color: gray;
+}
+
+.mainContainer #secondDiv #secondDivSlide, .mainContainer #secondDiv #secondDivSlideResponsive {
+  overflow: hidden;
+  width: 470px;
+  margin-right: 8.33%;
+}
+
+.mainContainer #secondDiv #secondDivSlide .secondImagesSlides, .mainContainer #secondDiv #secondDivSlide #secondImagesSlides, .mainContainer #secondDiv #secondDivSlideResponsive .secondImagesSlides, .mainContainer #secondDiv #secondDivSlideResponsive #secondImagesSlides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+  width: 100%;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.mainContainer #secondDiv #secondDivSlide .secondImagesSlides img, .mainContainer #secondDiv #secondDivSlide #secondImagesSlides img, .mainContainer #secondDiv #secondDivSlideResponsive .secondImagesSlides img, .mainContainer #secondDiv #secondDivSlideResponsive #secondImagesSlides img {
+  width: 470px;
+  height: 500px;
+}
+
+.mainContainer .thirdDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.mainContainer .thirdDiv .thirdDivTitle {
+  text-align: right;
+  margin-bottom: 50px;
+}
+
+.mainContainer .thirdDiv .thirdDivExplanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainContainer .thirdDiv .thirdDivExplanation .explanations {
+  text-align: right;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 30%;
+}
+
+.mainContainer .thirdDiv .thirdDivExplanation .explanations .thirdDivIcon i {
+  font-size: 25px;
+}
+
+.mainContainer .thirdDiv .thirdDivExplanation .line {
+  margin-top: 20px !important;
+}
+
+.mainContainer .thirdDiv .thirdDivExplanation h4 {
+  font-weight: bolder;
+}
+
+.mainContainer .fourthDiv {
+  margin-top: 100px;
+  width: 100%;
+  text-align: right;
+}
+
+.mainContainer .fourthDiv .fourthDivMenu, .mainContainer .fourthDiv .fourthDivMenuResponsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin-bottom: 42px;
+}
+
+.mainContainer .fourthDiv .fourthDivMenu .fourthDivMenuIcon, .mainContainer .fourthDiv .fourthDivMenuResponsive .fourthDivMenuIcon {
+  background-color: #7beec7;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.mainContainer .fourthDiv .fourthDivMenu .fourthDivMenuIcon span, .mainContainer .fourthDiv .fourthDivMenuResponsive .fourthDivMenuIcon span {
+  font-size: 20px;
+  margin: auto;
+  position: absolute;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.mainContainer .fourthDiv .fourthDivMenu .fourthDivMenuIcon #iconMenuBarResponsive, .mainContainer .fourthDiv .fourthDivMenu .fourthDivMenuIcon #iconMenuBar, .mainContainer .fourthDiv .fourthDivMenuResponsive .fourthDivMenuIcon #iconMenuBarResponsive, .mainContainer .fourthDiv .fourthDivMenuResponsive .fourthDivMenuIcon #iconMenuBar {
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.mainContainer .fourthDiv .fourthDivMenu .fourthDivMenuIcon #iconExitResponsive, .mainContainer .fourthDiv .fourthDivMenu .fourthDivMenuIcon #iconExit, .mainContainer .fourthDiv .fourthDivMenuResponsive .fourthDivMenuIcon #iconExitResponsive, .mainContainer .fourthDiv .fourthDivMenuResponsive .fourthDivMenuIcon #iconExit {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mainContainer .fourthDiv .fourthDivMenu ul, .mainContainer .fourthDiv .fourthDivMenuResponsive ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 300px;
+  opacity: 0;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+  z-index: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  margin-bottom: 0px;
+}
+
+.mainContainer .fourthDiv .fourthDivMenu ul li a, .mainContainer .fourthDiv .fourthDivMenuResponsive ul li a {
+  color: #2a2a2a;
+  cursor: pointer;
+}
+
+.mainContainer .fourthDiv .fourthDivMenuResponsive ul {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding {
+  cursor: url("../images/cursor.png"), auto;
+  width: 340px;
+  height: 400px;
+  overflow: hidden;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms;
+  position: relative;
+  margin-top: 30px;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll img, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign img, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign img, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding img, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll img, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign img, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign img, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding img, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll img, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign img, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign img, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding img, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll img, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign img, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign img, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding img, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll img, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign img, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign img, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding img {
+  width: 100%;
+  height: 100%;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  width: 2px;
+  z-index: -1;
+  height: 0px;
+  background-color: #2a2a2a;
+  -webkit-transition: height 500ms;
+  transition: height 500ms;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  left: 0px;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: #2a2a2a;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+  bottom: 0px;
+  z-index: -1;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll:hover img, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding:hover img, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll:hover img, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding:hover img, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll:hover img, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding:hover img, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll:hover img, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding:hover img, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll:hover img, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign:hover img, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign:hover .picLayout, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding:hover .picLayout {
+  opacity: 1;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign:hover .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding:hover .picLayout::before {
+  width: 100%;
+  z-index: 1;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign:hover .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding:hover .picLayout::after {
+  height: 100%;
+  z-index: 1;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll:hover::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding:hover::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll:hover::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding:hover::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll:hover::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding:hover::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll:hover::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding:hover::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll:hover::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign:hover::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding:hover::after {
+  width: 100%;
+  z-index: 1;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll:hover::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding:hover::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll:hover::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding:hover::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll:hover::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding:hover::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll:hover::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding:hover::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll:hover::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign:hover::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding:hover::before {
+  height: 100%;
+  z-index: 1;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  height: 100%;
+  background-color: rgba(123, 238, 199, 0.9);
+  opacity: 0;
+  -webkit-transition: opacity 300ms;
+  transition: opacity 300ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .like, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .like {
+  margin-right: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  position: relative;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .like i, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .like i {
+  margin-bottom: 5px;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .like .likedAlert, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .like .likedAlert {
+  opacity: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .like .likeicons {
+  position: relative;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .like .likeicons #fillLikeIcon, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .like .likeicons #fillLikeIcon {
+  position: absolute;
+  display: none;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle h5 {
+  margin-bottom: 0px;
+  font-weight: bolder;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout::before, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: #2a2a2a;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+  left: 0px;
+  z-index: -1;
+}
+
+.mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout::after, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  width: 2px;
+  height: 0px;
+  background-color: #2a2a2a;
+  -webkit-transition: height 500ms;
+  transition: height 500ms;
+  -webkit-transition-delay: 500ms;
+          transition-delay: 500ms;
+  top: 0px;
+  z-index: -1;
+}
+
+.mainContainer .loadingIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 100px;
+}
+
+.mainContainer .loadingIcon span {
+  font-size: 70px;
+}
+
+.mainContainer .loadingIcon span:hover {
+  color: #7beec7;
+  cursor: pointer;
+}
+
+.mainContainer .fifthDiv {
+  margin-top: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.mainContainer .fifthDiv .leftBox {
+  width: 50%;
+  height: 300px;
+  background-color: #7beec7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.mainContainer .fifthDiv .rightBox {
+  width: 50%;
+  height: 300px;
+  background-image: url("../images/pic5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainContainer .fifthDiv .rightBox form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px;
+  width: 80%;
+  background-color: #fff;
+  height: 70%;
+}
+
+.mainContainer .fifthDiv .rightBox form .formInput {
+  border-radius: 0px;
+  width: 70%;
+  height: 50px;
+  text-align: right;
+}
+
+.mainContainer .fifthDiv .rightBox form .formBtn {
+  border-radius: 0px;
+  background-color: #7beec7;
+  border-color: #7beec7;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+.mainContainer .bringUp {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 15px;
+  z-index: 1;
+  bottom: 15px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  text-decoration: none;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainContainer .bringUp span {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #f4f4f4;
+  width: 100%;
+  margin-top: 100px;
+}
+
+footer .footerContainer {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 1140px;
+}
+
+footer .footerContainer .footerBox {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footerContainer .footerBox .footerIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px;
+}
+
+footer .footerContainer .footerBox .footerIcons a {
+  color: #2a2a2a;
+}
+
+footer .footerContainer .footerBox .footerIcons a i {
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+footer .footerContainer .footerBox .footerIcons a i:hover {
+  color: #7beec7;
+}
+
+footer .footerContainer .footerBox p {
+  color: gray;
+}
+
+footer .footerContainer .footerBox h5 {
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 1322px) {
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .allCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .firstCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .firstCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .secondCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .secondCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .fourthDivPicBranding {
+    width: 300px;
+    height: 330px;
+  }
+  .mainContainer #secondDiv #secondDivSlide, .mainContainer #secondDiv #secondDivSlideResponsive {
+    width: 50%;
+  }
+  .mainContainer #secondDiv #secondDivSlide #secondDivImagesSlider, .mainContainer #secondDiv #secondDivSlide #secondDivImagesSliderResponsive, .mainContainer #secondDiv #secondDivSlideResponsive #secondDivImagesSlider, .mainContainer #secondDiv #secondDivSlideResponsive #secondDivImagesSliderResponsive {
+    width: 300%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1181px) {
+  .mainContainer {
+    width: 970px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding {
+    width: 260px;
+    height: 290px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle h5 {
+    font-size: 20px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle p {
+    font-size: 18px;
+  }
+  footer .footerContainer {
+    width: 970px;
+  }
+}
+
+@media only screen and (max-width: 1036px) {
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .allCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .firstCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .firstCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .secondCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .secondCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .fourthDivPicBranding {
+    width: 240px;
+    height: 270px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .mainContainer {
+    width: 750px;
+  }
+  .mainContainer .thirdDiv .thirdDivTitle {
+    margin-bottom: 0%;
+  }
+  .mainContainer .thirdDiv .thirdDivExplanation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContainer .thirdDiv .thirdDivExplanation .explanations {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .mainContainer .fifthDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContainer .fifthDiv .rightBox {
+    width: 100%;
+  }
+  .mainContainer .fifthDiv .leftBox {
+    width: 100%;
+  }
+  .mainContainer #secondDiv {
+    opacity: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContainer #secondDiv #secondDivText {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .mainContainer #secondDiv #secondDivSlide {
+    margin-right: 0%;
+    width: 100%;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding {
+    width: 190px;
+    height: 220px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle h5 {
+    font-size: 16px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle p {
+    font-size: 12px;
+  }
+  .mainContainer .firstDiv .imageContainer .images {
+    height: 580px;
+  }
+  .mainContainer .firstDiv .title .title1 {
+    font-size: 30px;
+  }
+  .mainContainer .firstDiv .title .title2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  footer .footerContainer {
+    position: relative;
+    width: 750px;
+  }
+  footer .footerContainer #footerContact {
+    position: absolute;
+    right: 45%;
+  }
+  footer .footerContainer #footerRights {
+    position: absolute;
+    bottom: 30%;
+    right: 0%;
+  }
+}
+
+@media only screen and (max-width: 788px) {
+  .mainContainer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding {
+    width: 370px;
+    height: 400px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle h5, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle h5 {
+    font-size: 20px;
+  }
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign .picLayout .picTitle p, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding .picLayout .picTitle p {
+    font-size: 18px;
+  }
+  .mainContainer .firstDiv .title {
+    top: 45%;
+  }
+  .mainContainer .firstDiv .imageContainer .images {
+    height: 400px;
+  }
+  .mainContainer header .menu {
+    display: none;
+  }
+  .mainContainer header #menuResponsive {
+    display: block !important;
+  }
+  .mainContainer header #menuResponsive .menuSlider #menuResponsiveSliderContainer .menuList {
+    margin-top: 0px;
+  }
+  .mainContainer .fifthDiv .rightBox form {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .mainContainer .fifthDiv .rightBox form .formInput {
+    width: 98%;
+  }
+  footer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  footer .footerContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 100%;
+  }
+  footer .footerContainer .footerBox {
+    margin-bottom: 80px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footerContainer .footerBox p {
+    margin: auto;
+  }
+  footer .footerContainer .footerBox .footerIcons {
+    padding-bottom: 20px;
+  }
+  footer .footerContainer #footerContact {
+    margin-bottom: 100px;
+    position: unset;
+  }
+  footer .footerContainer #footerRights {
+    position: absolute;
+    bottom: 0px;
+    right: unset;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 542px) {
+  .mainContainer .firstDiv .title .title1, .mainContainer .firstDiv .title #title2Responsive {
+    font-size: 20px;
+  }
+  .mainContainer .firstDiv .title #title2 {
+    height: 40px;
+    display: none;
+  }
+  .mainContainer .firstDiv .title #title2Responsive {
+    display: block !important;
+    height: 30px;
+  }
+  .mainContainer .firstDiv .imageContainer .images {
+    height: 300px;
+  }
+  .mainContainer #secondDiv #secondDivSlide #secondDivImagesSlider img, .mainContainer #secondDiv #secondDivSlide #secondDivImagesSliderResponsive img, .mainContainer #secondDiv #secondDivSlideResponsive #secondDivImagesSlider img, .mainContainer #secondDiv #secondDivSlideResponsive #secondDivImagesSliderResponsive img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .allCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .firstCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .secondCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .thirdCategory .row .fourthDivPicBranding, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicAll, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicWebDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicGraphicDesign, .mainContainer .fourthDiv .fourthDivPics .fourthCategory .row .fourthDivPicBranding {
+    width: 100%;
+    height: 100%;
+  }
+  .mainContainer .firstDiv .imageContainer .images {
+    height: 300px;
+  }
+  .mainContainer .firstDiv .title #title2Responsive {
+    display: none !important;
+  }
+  .mainContainer .firstDiv .title #title2Responsive2 {
+    display: block !important;
+    height: 26px;
+  }
+  h3, h4 {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .line {
+    border-width: .1px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .mainContainer .firstDiv .imageContainer .images {
+    height: 200px;
+  }
+  .mainContainer .firstDiv .title {
+    top: 35%;
+  }
+  .mainContainer .fourthDiv .fourthDivMenu {
+    display: none;
+  }
+  .mainContainer .fourthDiv .fourthDivMenuResponsive {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .mainContainer .fourthDiv .fourthDivMenuResponsive ul {
+    margin-top: 15px;
+  }
+}
+
+::-webkit-scrollbar {
+  border-left: solid 1px black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aeaeae;
+}
+
+::-webkit-scrollbar {
+  background: #eeeeee;
+}
+/*# sourceMappingURL=style.css.map */
